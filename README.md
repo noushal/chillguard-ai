@@ -50,7 +50,7 @@ Three sources are available, pick one:
 **Option A - real + synthetic blend (currently in `data/chiller_data.csv`)**
 
 CHILLER-01 is real data ([Kaggle: Chiller Energy Data](https://www.kaggle.com/datasets/chillerenergy/chiller-energy-data),
-Singapore commercial building, 13,615 rows, 2019-08-18 → 2020-06-01, saved locally at
+Singapore commercial building, 13,615 rows, 2019-08-18 -> 2020-06-01, saved locally at
 `data/raw/chiller_01_real_kaggle.csv`). CHILLER-02/03 are synthetic (no public multi-chiller
 version of this dataset exists). Rebuild it with:
 
@@ -81,9 +81,13 @@ streamlit run app.py
 python -m streamlit run app.py
 ```
 
-Dashboard opens at `http://localhost:8501`. First load takes ~10–15s (trains models); cached after
+Dashboard opens at `http://localhost:8501`. First load takes ~10-15s (trains models); cached after
 that. Navigate via the tabs at the top: Overview, Equipment Monitoring, Anomaly Explorer, Evidence,
 Historical Analysis.
+
+`models/*.pkl` isn't in the repo (gitignored - trained binaries, not source). Both commands above
+train fresh and write them to `models/` automatically on first run; nothing to download or set up
+separately.
 
 ## Structure
 
