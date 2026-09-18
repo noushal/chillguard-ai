@@ -1,0 +1,15 @@
+venv/
+__pycache__/
+*.pyc
+
+models/*.pkl
+
+data/chiller_data.csv
+
+.streamlit/
+
+.vscode/
+.idea/
+
+.DS_Store
+Thumbs.db
